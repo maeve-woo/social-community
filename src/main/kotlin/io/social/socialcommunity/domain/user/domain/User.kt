@@ -1,7 +1,6 @@
 package io.social.socialcommunity.domain.user.domain
 
-import io.social.socialcommunity.domain.category.domain.Category
-import io.social.socialcommunity.domain.support.jpa.BaseAggregateRoot
+import io.social.socialcommunity.domain.support.jpa.BaseEntity
 import java.time.OffsetDateTime
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -18,4 +17,4 @@ class User(
 	var town: String,
 
 	var createdAt: OffsetDateTime = OffsetDateTime.now()
-): BaseAggregateRoot<Category>()
+) : BaseEntity()
